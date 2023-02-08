@@ -230,8 +230,8 @@ const MainPage = () => {
                           Colors.secondaryBackgroundSecondColor,
                         ]}
                         style={styles.displayUsersRowBackgroundLinear}
-                        start={{ x: 0.2, y: 1 }}
-                        end={{ x: 1, y: 1 }}
+                        start={{ x: 1, y: 1 }}
+                        end={{ x: 1, y: 0 }}
                       >
                         <LinearGradient
                           colors={[
@@ -361,6 +361,7 @@ const styles = StyleSheet.create({
   mainView: {
     backgroundColor: Colors.lightBlue,
     flex: 1,
+    
   },
   loadingView: {
     position: "absolute",
@@ -372,19 +373,20 @@ const styles = StyleSheet.create({
   },
   displayUsersView: {
     flexDirection: "column",
-    justifyContent: "flex-start",
+    justifyContent: "center",
     alignItems: "center",
-    paddingBottom: "20%",
+    paddingBottom: "8%",
   },
   listScrollView: {
     height: "87%",
-    width: "95%",
+    width: "100%",
     borderRadius: 16,
     // maxHeight: Platform.OS === "ios" ? "43%" : "47%",
     // marginLeft: 8,
     // marginBottom:36,
     borderBottomLeftRadius: 16,
     // paddingTop: 11.2,
+  
   },
   listMainView: {
     flexDirection: "column",
@@ -392,7 +394,7 @@ const styles = StyleSheet.create({
     alighItems: "center",
     borderRadius: 16,
     height: "auto",
-    marginBottom: 36,
+    marginBottom: 16,
   },
 
 
@@ -402,7 +404,10 @@ const styles = StyleSheet.create({
   rowNameLinear: {
     borderTopLeftRadius: 16,
     borderTopRightRadius: 16,
-    paddingVertical: 6,
+    // paddingVertical: 6,
+    minHeight:60,
+    marginTop:-8,
+    alignItems:"center",
   },
 
   eatBtnsLinear: {
@@ -424,8 +429,7 @@ const styles = StyleSheet.create({
   },
   displayUsersRowBackgroundLinear: {
     borderRadius: 16,
-    width: 350,
-    height: 160,
+    width: 340,
     shadowColor: Colors.textColor,
     shadowOffset: {
       width: 0,
@@ -434,6 +438,9 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.21,
     shadowRadius: 5.65,
     elevation: 6,
+    paddingTop:8,
+    paddingBottom:8,
+    
   },
 
 
@@ -468,11 +475,11 @@ const styles = StyleSheet.create({
   },
   displayFlex: {
     // height: 300,
-    width: "92%",
+    width: "100%",
     paddingHorizontal: 8,
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
   },
 
 
@@ -482,18 +489,22 @@ const styles = StyleSheet.create({
   classText: {
     fontSize: 30,
     fontWeight: "bold",
-    margin: 10,
-    padding: 6,
+    marginTop: 10,
+    paddingTop: 6,
     textAlign: "center",
   },
   listText: {
     flexDirection: "row",
     alignSelf: "center",
-    justifyContent: "center",
-    width: "85%",
-    paddingBottom: 8
+    justifyContent: "flex-start",
+    width: "100%",
+    paddingBottom: 8,
+    alignItems:"center",
+    minHeight:60,
+    paddingLeft:16,
   },
   miniTitles: {
+    width:"100%",
     textAlign: "center",
     fontSize: 16,
     padding: 4,
@@ -505,7 +516,6 @@ const styles = StyleSheet.create({
     padding: 4,
   },
   miniTitle: {
-    textAlign: "center",
     fontSize: 16,
     padding: 4,
     fontWeight: "bold",
@@ -514,6 +524,7 @@ const styles = StyleSheet.create({
   listItemNumberInClass: {
     fontSize: 16,
     fontWeight: "bold",
+    alignItems:"center",
   },
   listItemFullName: {
     fontSize: 17,

@@ -171,6 +171,10 @@ const styles = StyleSheet.create({
     height: "100%",
     justifyContent: "center",
     alignItems: "center",
+    maxWidth:350,
+  },
+  mainContentLinear: {
+  maxWidth:350,
   },
   secondContent: {
     // marginBottom: 100,
@@ -188,6 +192,8 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.21,
     shadowRadius: 3.65,
     elevation: 6,
+    maxWidth:330,
+    padding:24,
   },
 
 
@@ -197,8 +203,8 @@ const styles = StyleSheet.create({
   inputBox: {
     backgroundColor: "white",
     marginBottom: 36,
-    width: 300,
-    height: 55,
+    width: 280,
+    height: 45,
     borderRadius: 12,
     textAlign: "center",
     fontSize: 18,
@@ -235,7 +241,7 @@ const styles = StyleSheet.create({
     color: Colors.textColor,
   },
   logInTextLinear: {
-    width: 350,
+    width: 330,
     height: 80,
     justifyContent: "center",
     alignItems: "center",

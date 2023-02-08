@@ -46,7 +46,7 @@ const StackNavigator = () => {
                   //trqbva da e s absolutna poziciq za da se polzva nqkakuv stil
                   postion: "absolute",
                   backgroundColor: Colors.bottomTabNavigator,
-                  height: Platform.OS === "ios" ? "12%" : "10%",
+                  height: Platform.OS === "ios" ? "10%" : "8%",
                   // paddingBottom: insets.bottom,
                 },
                 //stila na iconite v menuto
@@ -54,7 +54,7 @@ const StackNavigator = () => {
                   let iconName;
                   if (route.name === "MainPage") {
                     (iconName = focused ? "home-circle" : "home"),
-                      (size = focused ? 42 : 32),
+                      (size = focused ? 32 : 28),
                       (color = focused
                         ? Colors.bottomTabNavigatorIconFocused
                         : Colors.bottomTabNavigatorIcon);
@@ -87,7 +87,7 @@ const StackNavigator = () => {
                   //nadpisa pod ikonata
                   tabBarLabel: "Начало",
                   tabBarLabelStyle: {
-                    paddingBottom: 6,
+                    paddingBottom: 3,
                     color: Colors.bottomTabNavigatorLabel,
                     fontSize: 12,
                   },
@@ -100,7 +100,7 @@ const StackNavigator = () => {
                   //nadpisa pod ikonata
                   tabBarLabel: "Лист",
                   tabBarLabelStyle: {
-                    paddingBottom: 6,
+                    paddingBottom: 3,
                     color: Colors.bottomTabNavigatorLabel,
                     fontSize: 12,
                   },
@@ -133,7 +133,7 @@ const StackNavigator = () => {
 
 const styles = StyleSheet.create({
   icon: {
-    // paddingTop: 9,
+    paddingTop: 6,
     
   },
 });
